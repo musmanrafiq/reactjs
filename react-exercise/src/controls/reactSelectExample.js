@@ -48,12 +48,11 @@ fetchData = (inputValue, callback) => {
                 value={this.state.selectedOption}
                 loadOptions={this.fetchData}
                 placeholder="Admin Name"
-                className="venueAdminControl"
                 onChange={(e) => {
                     this.onSearchChange(e);
                 }}
                 defaultOptions={false}
-                />
+            />
       </div>)
   }
 
