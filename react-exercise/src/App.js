@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import ReactSelectExample from '../src/controls/reactSelectExample';
+import ReactLazyView from '../src/concepts/reactlazy/reactLazyView';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <ReactSelectExample />
+      <ReactLazyView />
     </div>
   );
 }
