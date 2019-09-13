@@ -3,6 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 import ReactSelectExample from '../src/controls/reactSelectExample';
 import ReactLazyView from '../src/concepts/reactlazy/reactLazyView';
+import TestOneView from '../src/concepts/dynamicImports/testOneView';
+import LoginView from '../src/components/loginView';
+import SigninView from '../src/concepts/hooks/signinView';
+
 
 function App() {
   return (
@@ -17,7 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <ReactLazyView />
+      <SigninView />
     </div>
   );
 }
