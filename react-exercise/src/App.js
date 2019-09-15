@@ -6,6 +6,7 @@ import ReactLazyView from '../src/concepts/reactlazy/reactLazyView';
 import TestOneView from '../src/concepts/dynamicImports/testOneView';
 import LoginView from '../src/components/loginView';
 import SigninView from '../src/concepts/hooks/signinView';
+import UseEffectView from '../src/concepts/hooks/useEffectView';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <SigninView />
+      <UseEffectView />
     </div>
   );
 }
