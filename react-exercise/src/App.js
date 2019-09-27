@@ -7,7 +7,10 @@ import TestOneView from '../src/concepts/dynamicImports/testOneView';
 import LoginView from '../src/components/loginView';
 import SigninView from '../src/concepts/hooks/signinView';
 import UseEffectView from '../src/concepts/hooks/useEffectView';
+import UseContextView from '../src/concepts/hooks/useContextView';
 
+
+export const UserContext = React.createContext({});
 
 function App() {
   return (
@@ -22,7 +25,9 @@ function App() {
           Learn React
         </a>
       </header>
-      <UseEffectView />
+      <UserContext.Provider value={{ pageTitle : 'MyTitle'}}>
+        <UseContextView />
+      </UserContext.Provider>
     </div>
   );
 }
