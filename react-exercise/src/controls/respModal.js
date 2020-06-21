@@ -4,24 +4,23 @@ import { Modal } from "react-responsive-modal";
 
 class RespModal extends React.Component {
   state = {
-    open: false
+    hasOpen: false
   };
 
-  onOpenModal = () => {
-    this.setState({ open: true });
+  onButtonClick = () => {
+    this.setState({ hasOpen: true });
   };
 
   onCloseModal = () => {
-    this.setState({ open: false });
+    this.setState({ hasOpen: false });
   };
-
   render() {
-    const { open } = this.state;
+    const { hasOpen } = this.state;
     return (
       <div>
-        <button onClick={this.onOpenModal}>Open modal</button>
-        <Modal open={open} onClose={this.onCloseModal} center>
-          <h2>Simple centered modal</h2>
+        <button onClick={this.onButtonClick}>Lets Open Modal</button>
+        <Modal open={hasOpen} onClose={this.onCloseModal} center>
+          <p>This is modal paragraph</p>
         </Modal>
       </div>
     );
