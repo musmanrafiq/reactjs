@@ -9,12 +9,13 @@ import SigninView from "../src/concepts/hooks/signinView";
 import UseEffectView from "../src/concepts/hooks/useEffectView";
 import UseContextView from "../src/concepts/hooks/useContextView";
 import RespModal from "../src/controls/respModal";
+import DebounceFieldView from "../src/concepts/debounce/debounceFieldView";
 
 export const UserContext = React.createContext({});
 function App() {
   return (
     <div className="App">
-      <RespModal />
+      <DebounceFieldView />
     </div>
   );
 }
