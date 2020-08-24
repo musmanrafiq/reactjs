@@ -1,24 +1,20 @@
 import React, { Component } from "react";
-import {DebounceInput} from 'react-debounce-input';
-
+import { DebounceInput } from "react-debounce-input";
 
 class DebounceFieldView extends Component {
-
-    state = {
-      value: ''
-  }
-
-
-
+  state = {
+    inputValue: ""
+  };
   render() {
     return (
       <div>
-          <DebounceInput
-          minLength={2}
-          debounceTimeout={300}
-          onChange={event => this.setState({value: event.target.value})} />
- 
-        <p>Value: {this.state.value}</p>
+        <DebounceInput
+          minLength={3}
+          debounceTimeout={500}
+          onChange={event => this.setState({ inputValue: event.target.value })}
+        />
+
+        <p>{this.state.inputValue}</p>
       </div>
     );
   }
