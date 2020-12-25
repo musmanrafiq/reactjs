@@ -1,7 +1,7 @@
-import { makeObservable, observable, action } from "mobx";
+import { observable, action, makeObservable } from "mobx";
 
 class UserStore {
-  userName = "k";
+  userName = "Usman Rafiq";
 
   constructor() {
     makeObservable(this, {

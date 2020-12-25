@@ -1,12 +1,20 @@
 import { Component } from "react";
-import { observer, inject } from "mobx-react";
+import { inject, observer } from "mobx-react";
 
 class UserComponent extends Component {
   render() {
     return (
       <div>
-        <p>Count: {this.props.userStore.userName}</p>
-        <button onClick={() => this.props.userStore.setName()}>Set Name</button>
+        <p>User Name: {this.props.userStore.userName}</p>
+
+        <button
+          onClick={() => {
+            this.props.userStore.setName();
+          }}
+          style={{ width: "10%" }}
+        >
+          Set Name
+        </button>
       </div>
     );
   }

@@ -9,7 +9,7 @@
     "react-dom": "^16.9.0",
     "react-responsive-modal": "^5.0.2",
     "react-scripts": "2.1.8",
-    "react-select": "^3.0.4"
+    "react-select": "3.1.1"
   },
   "scripts": {
     "start": "set PORT=3001 && react-scripts start",

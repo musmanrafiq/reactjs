@@ -15,7 +15,7 @@ export const UserContext = React.createContext({});
 function App() {
   return (
     <div className="App">
-      <DebounceFieldView />
+      <ReactSelectExample />
     </div>
   );
 }
