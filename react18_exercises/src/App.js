@@ -1,14 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import ButtonOnClick from './buttons/buttonOnClick';
+import InputValueDisplay from './inputs/inputValueDisplay';
+
 
 function App() {
 
-  const onButtonClick = () => {
-    alert('Hi')
-  };
+
   return (
     <div className="App">
-    <button onClick={onButtonClick}>Click me</button>
+
+      <ButtonOnClick />
+
+      <InputValueDisplay />
+     
     </div>
   );
 }
